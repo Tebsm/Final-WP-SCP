@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Weather Buddy</title>
+		<meta charset="UTF-8" />
+	<link rel="stylesheet" href="src/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+        <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+  <div id = "title">CITY WEATHER APP</div>
+    
+    <div class="container text-right">
+        <form id="city-form">
+            <input type="text"
+            placeholder="Enter City Name" 
+            autocomplete = "off"
+            autofocus="on"   
+            id = "search-text-input"/>
+         <button type="submit" class="btn btn-primary" value = search>Submit</button>
+
+        </form>
+    </div>         
+    <br>
+    <h2 id="city-name">Currently in 
+       Pretoria</h2>
+
+       <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class=" row">
+        <div id="current-time" id="current-time"> </div></div>
+            <div class="row"> <span> <strong id= "temp">
+              21 
+          </strong> <button id="celsius"><sup>°C</button>
+            <span id="divider"><sup>|</span>
+            <button id="fahrenheit"><sup>°F</button></div></span>
+                            
+              <div. id="weatherIcon">🌥️🌥️ </div.>               
+              <span id="weatherDescription">Clear Sky</span>
+              </div>
+              
+              <div class="col">
+                <div class=" box">
+                <div id=hum> Humidity:</div>
+                <div id=win> Wind:</div>
+            <div id=feels> Feels Like:</div></div></div>
+                
+              </div>
+            </div>
+            
+              
+      <br>
+
+      <div class="weather-forecast" id="forecast">
+            
+                </div>
+                
+				<br>
+				
+	</div>	
+  
+  </div>
+  
+ <div class = codelink> 
+    <a href="https://github.com/Tebsm/SCP--WProject.gitt!">Open-Source Code</a> by TL Motebele👩🏾‍💻
+ </div>
+    <script src="src/index.js">
+</script>
+    
+  </body>
+</html>

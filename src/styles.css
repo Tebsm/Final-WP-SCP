@@ -1,0 +1,105 @@
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 10px;
+  background: radial-gradient(
+    328px at 2.9% 15%,
+    rgb(191, 224, 251) 0%,
+    rgb(232, 233, 251) 25.8%,
+    rgb(252, 239, 250) 50.8%,
+    rgb(234, 251, 251) 77.6%,
+    rgb(240, 251, 244) 100.7%
+  )
+}
+#title {
+  text-align: center;
+  text-rendering: geometricPrecision;
+  font-size: 30px;
+  font-weight: bold;
+  color: rgb(35, 17, 169);
+ 
+}
+h2 {
+  font-size: 32px;
+  font-weight: bold;
+  
+}
+#city-name {
+  color: rgb(35, 17, 169);;
+}
+p {
+  display: block;
+  text-align: right;
+
+}
+form {
+  text-align: right;
+}
+#current-time {
+  font-weight: bold;
+}
+#temp {
+  font-size: 60px;
+  color: rgb(35, 17, 169);
+}
+#weatherDescription {
+  margin-top: 0px;
+  font-size: 20px;
+  text-transform: capitalize;
+  color: rgb(35, 17, 169);;
+}
+
+#celsius {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: bold;
+}
+#fahrenheit {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  
+}
+#divider {
+  border: none;
+  background-color: transparent;
+  font-size: 25px;
+  color: rgb(35, 17, 169);
+}
+.card mb-3 {
+  border: 50%;
+  border-radius: 100px;
+  display: block;
+  margin: 300px;
+  padding: 150px;
+  text-align: left;
+}
+.container text-center {
+  align-items: left;
+}
+#hum {
+  font-size: 16px;
+  font-weight: bold;
+}
+#win {
+  font-size: 16px;
+
+  font-weight: bold;
+}
+#feels {
+  font-size: 16px;
+  color: rgb(35, 17, 169);
+  font-weight: bold;
+}
+.codelink {
+  text-align: center;
+  border-top: 0.px rgb(35, 17, 169);;
+}
+.container-text-center {
+  text-align: center;
+}
+#forecast {
+  text-align: center;
+}
