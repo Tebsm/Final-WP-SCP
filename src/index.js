@@ -19,31 +19,26 @@ form.addEventListener("submit", submitCity);
 let defaultCity = "Pretoria";
 submittedCityWeather(defaultCity);
 function displayForecast(response) {
-  
-  let dailyForecast = response.data.daily;
-
+  let dailyForecast = response.data.daily.slice(0, 6); 
   let forecastElement = document.querySelector("#forecast");
-
   let currentDate = new Date();
 
   let forecastHTML = `<div class="row">`;
 
-  // Loop through the daily forecast data for the next 6 days
-  for (let i = 0; i < 6; i++) {
-    // Calculate the date for the current forecast day
+  dailyForecast.forEach((forecastData, index) => {
     let forecastDate = new Date(currentDate);
-    forecastDate.setDate(currentDate.getDate() + i);
-
-   
-    let forecastData = dailyForecast[i];
+    forecastDate.setDate(currentDate.getDate() + index);
     let iconCode = forecastData.weather[0].icon;
     let maxTemperature = Math.round(forecastData.temp.max);
     let minTemperature = Math.round(forecastData.temp.min);
 
-    
-    let day = forecastDate.toLocaleString('en-us', { weekday: 'short' });
+    let day = "";
+    if (index === 0) {
+      day = "Today";
+    } else {
+      day = forecastDate.toLocaleString("en-us", { weekday: "short" });
+    }
 
-    
     forecastHTML += `
       <div class="col-2">
         <div class="weather-forecast-date">
@@ -55,12 +50,10 @@ function displayForecast(response) {
           <span class="weather-forecast-temperature-min">${minTemperature}°</span>
         </div>
       </div>`;
-  }
+  });
 
-  
   forecastHTML += `</div>`;
 
-  
   forecastElement.innerHTML = forecastHTML;
 }
   
